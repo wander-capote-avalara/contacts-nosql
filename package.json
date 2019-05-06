@@ -1,0 +1,49 @@
+{
+  "name": "contacts",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "ENVFILE=.env.dev react-native run-android",
+    "prod": "ENVFILE=.env.prod react-native run-android",
+    "test": "NODE_ENV=test jest --config ./jest.config.json",
+    "lint": "eslint src/**",
+    "android:prod": "cd android && ENVFILE=.env.prod ./gradlew assembleRelease",
+    "postinstall": "rm -rf ./node_modules/react-native/local-cli/core/__fixtures__/files/package.json && rm -rf node_modules/enzyme/.babelrc && rm -rf node_modules/airbnb-prop-types/.babelrc && rm -rf node_modules/airbnb-prop-types"
+  },
+  "dependencies": {
+    "axios": "^0.17.1",
+    "moment": "^2.22.1",
+    "react": "16.2.0",
+    "react-native": "0.53.0",
+    "react-native-config": "0.11.5",
+    "react-native-device-info": "^0.13.0",
+    "react-native-dropdownalert": "^3.4.0",
+    "react-native-elements": "^0.19.1",
+    "react-native-fontawesome": "^5.7.0",
+    "react-native-keyboard-aware-scroll-view": "^0.5.0",
+    "react-native-vector-icons": "^4.6.0",
+    "react-navigation": "1.0.0-beta.27",
+    "react-redux": "^5.0.7",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0"
+  },
+  "devDependencies": {
+    "@types/jest": "23.3.5",
+    "babel-eslint": "^8.2.3",
+    "babel-jest": "22.0.6",
+    "babel-preset-react-native": "4.0.0",
+    "enzyme": "3.0.0",
+    "enzyme-adapter-react-16": "1.1.1",
+    "enzyme-to-json": "3.3.3",
+    "eslint": "^4.19.1",
+    "eslint-plugin-react": "^7.7.0",
+    "jest": "23.6.0",
+    "jest-junit": "3.7.0",
+    "react-dom": "^16.3.1",
+    "react-test-renderer": "16.2.0",
+    "redux-mock-store": "^1.5.1"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}

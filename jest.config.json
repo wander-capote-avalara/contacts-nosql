@@ -1,0 +1,32 @@
+{
+    "preset": "react-native",
+    "testRegex": ".*.spec.js$",
+    "snapshotSerializers": [
+      "./node_modules/enzyme-to-json/serializer"
+    ],
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/android/",
+      "/ios/"
+    ],
+    "setupTestFrameworkScriptFile": "<rootDir>/__tests__/test-setup.js",
+    "transformIgnorePatterns": [
+      "node_modules/(?!react-native|react-navigation)/"
+    ],
+    "collectCoverage": true,
+    "coverageDirectory": "<rootDir>/coverage",
+    "collectCoverageFrom": [
+      "src/**",
+      "!src/assets/**",
+      "!src/resources/**",
+      "!**/*.snap"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 95,
+        "functions": 95,
+        "lines": 95,
+        "statements": -5
+      }
+    }
+  }

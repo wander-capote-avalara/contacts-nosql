@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/app/navigation/app.navigation.container.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../prettify.css" />
+    <link rel="stylesheet" href="../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../index.html">All files</a> / <a href="index.html">src/app/navigation</a> app.navigation.container.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>0/34</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/16</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/3</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>0/31</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80</td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js"><span class="cstat-no" title="statement not covered" >import React from 'react';</span>
+<span class="cstat-no" title="statement not covered" >import * as ReactNavigation from 'react-navigation';</span>
+<span class="cstat-no" title="statement not covered" >import { BackHandler } from 'react-native';</span>
+<span class="cstat-no" title="statement not covered" >import { connect } from 'react-redux';</span>
+<span class="cstat-no" title="statement not covered" >import { AppNavigation } from './app.navigation';</span>
+<span class="cstat-no" title="statement not covered" >import { setContainer } from './navigation.service';</span>
+&nbsp;
+export class AppNavigationComponent extends React.Component {
+&nbsp;
+	navigation: ReactNavigation.NavigationScreenProp;
+&nbsp;
+	componentDidMount() {
+&nbsp;
+<span class="cstat-no" title="statement not covered" >		BackHandler.addEventListener('hardwareBackPress', this.onBackPress.bind(this));</span>
+	}
+&nbsp;
+	componentWillUnmount() {
+&nbsp;
+<span class="cstat-no" title="statement not covered" >		BackHandler.removeEventListener('hardwareBackPress', this.onBackPress.bind(this));</span>
+	}
+&nbsp;
+	static canExitApp(nav) {
+&nbsp;
+		const mainDrawer = <span class="cstat-no" title="statement not covered" >nav.routes.find(<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >j =&gt; j.routeName === 'mainDrawer');</span></span></span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >		if (mainDrawer) {</span>
+&nbsp;
+			const drawerStack = <span class="cstat-no" title="statement not covered" >mainDrawer.routes[mainDrawer.index];</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >			if (drawerStack.routeName === 'DrawerClose' &amp;&amp; drawerStack.routes[drawerStack.index].routeName === 'contactList') {</span>
+&nbsp;
+				const contactStack = <span class="cstat-no" title="statement not covered" >drawerStack.routes[drawerStack.index];</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >				if (contactStack.routes.length === 1 &amp;&amp; contactStack.routes[contactStack.index].routeName === 'contactList') {</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >					return true;</span>
+				}
+			}
+		}
+&nbsp;
+<span class="cstat-no" title="statement not covered" >		if (nav.routes.length === 1 &amp;&amp; nav.routes.find(<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >j =&gt; j.routeName === 'login')) {</span></span></span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >			return true;</span>
+		}
+&nbsp;
+<span class="cstat-no" title="statement not covered" >		return false;</span>
+	}
+&nbsp;
+	onBackPress() <span class="cstat-no" title="statement not covered" >{</span>
+&nbsp;
+		const { dispatch, nav } = <span class="cstat-no" title="statement not covered" >this.props;</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >		if (AppNavigationComponent.canExitApp(nav)) {</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >			return false;</span>
+		}
+&nbsp;
+<span class="cstat-no" title="statement not covered" >		dispatch(ReactNavigation.NavigationActions.back());</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >		return true;</span>
+	}
+&nbsp;
+	render() <span class="cstat-no" title="statement not covered" >{</span>
+&nbsp;
+		const { dispatch, nav } = <span class="cstat-no" title="statement not covered" >this.props;</span>
+&nbsp;
+		const navigation = <span class="cstat-no" title="statement not covered" >ReactNavigation.addNavigationHelpers({</span>
+			dispatch,
+			state: nav
+		});
+&nbsp;
+<span class="cstat-no" title="statement not covered" >		this.navigation = navigation;</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >		return (&lt;AppNavigation navigation={navigation} ref={setContainer} /&gt;);</span>
+	}
+}
+&nbsp;
+const <span class="fstat-no" title="function not covered" >mapStateToProps = <span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" >s</span>tate =&gt; ({ nav: state.nav });</span></span>
+&nbsp;
+export const <span class="cstat-no" title="statement not covered" >ReduxAppNavigation = connect(mapStateToProps)(AppNavigationComponent);</span></pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sun May 05 2019 18:16:42 GMT-0300 (-03)
+</div>
+</div>
+<script src="../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../sorter.js"></script>
+</body>
+</html>
